@@ -5,6 +5,11 @@ application = Flask(__name__)
 
 ENV = os.environ.get('FLASK_ENV', 'dev')
 
+if ENV == 'dev':
+    pass # ustawienia dla wersji produktowej
+else:
+    pass # ustawienia dla wersji developerskiej
+
 @application.route('/')
 def hello_world():
     if ENV == 'dev':
