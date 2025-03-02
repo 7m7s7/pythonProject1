@@ -7,5 +7,5 @@ def hello_world():
     return('<h1> hello cicd </h1>')
 
 if __name__ == '__main__':
-    application.run(debug=True)
+    application.run(debug=True )
 
